@@ -21,9 +21,9 @@ Partie 2 : typage
 3. observer le code compilé
 
 */
-function saluer(nom) {
+function saluer(nom:string) {
     console.log('coucou ' + nom);
 }
-function chaineCoucou() {
+function chaineCoucou():string {
     return 'coucou';
 }
