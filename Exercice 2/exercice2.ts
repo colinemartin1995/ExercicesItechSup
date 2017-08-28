@@ -8,27 +8,30 @@ mais tous les types doivent être présent au moins une fois dans vos fonctions
 Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 */
-function saluer(nom:string) {
-    console.log('coucou ' + nom);
+function saluer(nom: string): string {
+    return nom;
 }
-function bool(ok:boolean) {
-    console.log(true);
+function saluer(nom: string): void {
+    console.log(nom);
+}
+function bool(ok: boolean): boolean{
+    return true;
 }
 function tableau() {
-    let list:number[] = [1,2,3,4];
+    let list: number[] = [1,2,3,4];
     return list;
 }
-function afficherTuple():number{
-    let x:[number,string] = [1, "coucou"];
+function afficherTuple(): number{
+    let x: [number,string] = [1, "coucou"];
     return x[0];
 }
 
-function afficherEnum(){
-    enum size{Small,Medium,Large};
-    return size.Small;
+enum Size{Small,Medium,Large}
+function choixTaille(maTaille:Size): string{
+    return Size.Small;
 }
 
-function afficherToto():void{
+function afficherToto(): void{
     console.log("je m'appelle toto!");
 }
 
@@ -36,17 +39,17 @@ function afficherAny(){
      let myAny = 30;
      return myAny;
 }
-function afficherNever():never{
+function afficherNever(): never{
     while(true){
 
     }
 
 }
-function afficherNull():null{
+function afficherNull(): null{
     let toto = null;
     return toto;
 }
-function afficher():undefined{
+function afficher(): undefined{
   let toto: string;
   return undefined;
  }
