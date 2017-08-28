@@ -15,11 +15,11 @@ Indiquer la hiérachie de type pour chacune des classes suivantes
 sous la forme d'un commentaire au dessus de la définition
 */
 
-/* */
+/*La Personne est étendue à la classe Etudiant*/
 class Etudiant extends Personne {}
 
-/* */
-class Professeur {
+/*On étend la classe Personne à la classe Professeur; Professeur hérite des charactéristiques de Personne*/
+class Professeur extends Personne {
   private nom: string;
   private prenom: string;
   telephone: number;
@@ -28,4 +28,6 @@ class Professeur {
 /* La déclaration suivante n'est pas valide.
 Expliquez dans un commentaire.
 */
-class Stagiaire implements Contact {}
+class Stagiaire implements Contact {
+
+}
