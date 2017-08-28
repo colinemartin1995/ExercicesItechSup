@@ -9,14 +9,19 @@ soumettre le résultat sur votre dépot github
 */
 
 class Personne{
-    nom as string
-    prenom as string
 
-    function sepresenter(prenom: string, nom: string): void{
-      console.log('Bonjour je mappelle ${this.prenom} {Coline} ${this.nom} {MARTIN}.');
+    nom: string;
+    prenom: string;
+
+    constructor(nom: string, prenom: string){
+      this.nom = nom;
+      this.prenom = prenom;
+    }
+
+    sepresenter(): void{
+         console.log('Bonjour je suis ${this.nom} ${this.prenom}')
     }
 }
-
 /*
 Partie 2
 Créer une classe étudiant, héritant de la classe personne
