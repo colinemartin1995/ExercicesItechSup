@@ -8,7 +8,14 @@ Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 */
 
-class Personne
+class Personne{
+    nom as string
+    prenom as string
+
+    function sepresenter(prenom: string, nom: string): void{
+      console.log('Bonjour je mappelle ${this.prenom} {Coline} ${this.nom} {MARTIN}.');
+    }
+}
 
 /*
 Partie 2
@@ -20,6 +27,13 @@ Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 
 */
-enum ...
+enum Cursus{
+  Informatique,
+  Droit,
+  Mathematiques,
+  Anglais
+}
 
-class Etudiant
+class Etudiant extends Personne{
+    private cursus = Cursus.Droit;
+}
