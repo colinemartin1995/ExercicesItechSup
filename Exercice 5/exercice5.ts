@@ -18,8 +18,8 @@ sous la forme d'un commentaire au dessus de la définition
 /*La Personne est étendue à la classe Etudiant*/
 class Etudiant extends Personne {}
 
-/*On étend la classe Personne à la classe Professeur; Professeur hérite des charactéristiques de Personne*/
-class Professeur extends Personne {
+
+class Professeur {
   private nom: string;
   private prenom: string;
   telephone: number;
@@ -27,7 +27,9 @@ class Professeur extends Personne {
 
 /* La déclaration suivante n'est pas valide.
 Expliquez dans un commentaire.
-*/
-class Stagiaire implements Contact {
 
+*/
+
+class Stagiaire extends Personne implements Contact {
+  telephone: number;
 }

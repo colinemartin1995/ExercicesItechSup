@@ -28,19 +28,19 @@ var Etudiant = /** @class */ (function (_super) {
     }
     return Etudiant;
 }(Personne));
-/*On étend la classe Personne à la classe Professeur; Professeur hérite des charactéristiques de Personne*/
-var Professeur = /** @class */ (function (_super) {
-    __extends(Professeur, _super);
+var Professeur = /** @class */ (function () {
     function Professeur() {
-        return _super !== null && _super.apply(this, arguments) || this;
     }
     return Professeur;
-}(Personne));
+}());
 /* La déclaration suivante n'est pas valide.
 Expliquez dans un commentaire.
+
 */
-var Stagiaire = /** @class */ (function () {
+var Stagiaire = /** @class */ (function (_super) {
+    __extends(Stagiaire, _super);
     function Stagiaire() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     return Stagiaire;
-}());
+}(Personne));
